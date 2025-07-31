@@ -1,22 +1,73 @@
-h1 {
-    color: brown;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Important to allow vertical centering */
 }
-p{
-    color: chocolate;
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f4f5f7;
+  display: flex;
+  flex-direction: column;         /* Stack children vertically */
+  justify-content: center;        /* Vertical centering */
+  align-items: center;            /* Horizontal centering */
+}
+
+.social-icons img{
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.2s;
 }
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #0077cc;
+    background-color: #33cc59;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
-  button:hover {
-    background-color: #005fa3;
-  }
-body{
-    background-image: ;
+button:hover {
+    background-color: #a6cc33;
+    color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: brown;
+  size: 30px;
+}
+p{
+  color: chocolate;
+}
+
+.nav-links {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
 }
