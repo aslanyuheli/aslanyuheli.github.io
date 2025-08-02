@@ -21,6 +21,7 @@ section {
   box-sizing: border-box;
   text-align: center;
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .social-icons img{
