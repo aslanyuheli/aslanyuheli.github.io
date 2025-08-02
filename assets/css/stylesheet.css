@@ -1,16 +1,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Important to allow vertical centering */
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
 }
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
   background: #f4f5f7;
   display: flex;
-  flex-direction: column;         /* Stack children vertically */
-  justify-content: center;        /* Vertical centering */
-  align-items: center;            /* Horizontal centering */
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 60px;
+}
+
+
+section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .social-icons img{
@@ -18,27 +27,18 @@ body {
   margin: 0 10px;
   transition: transform 0.2s;
 }
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #33cc59;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #a6cc33;
-    color: black;
-}
 
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
   gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 .left, .right {
   flex: 1;
@@ -55,9 +55,16 @@ p{
 }
 
 .nav-links {
+  position: fixed;          /* ✅ Fix it to the top */
+  top: 0;                   /* Align to the top of the page */
+  left: 0;
+  width: 100%;              /* Stretch full width */
+  background-color: white;  /* Prevent transparency over sections */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;            /* Keep it above all content */
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  
 }
 
 .nav-links a {
@@ -70,4 +77,48 @@ p{
 
 .nav-links a:hover {
   color: #0077cc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #33cc59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a6cc33;
+    color: black;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: #fffbe6;
+}
+
+#projects { 
+  background: #CDD9C5;
+  padding: 120px 40px;
+  text-align: center;}
+#photography { background: #f0f0f0; }
+#cesium { background: #fff0f6; }
+#contact { background: #f9f0ff; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  text-align: left;
+  border-bottom: 1px solid #000;
+  width: 45%;
 }

@@ -7,31 +7,84 @@
   <link rel="stylesheet" href="assets/css/stylesheet.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="right">
-      <h2>Hi! My name is</h2>
-      <h1>Aslan Li</h1>
-      <img src="assets/img/profile1.jpg" alt="Profile pic" width="600">
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#selfdesc">Self Description</a>
+    <a href="#projects">Projects</a>
+    <a href="#photography">Natural Photography</a>
+    <a href="#cesium">Cesium</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id = 'home'>
+    <div class="container">
+      <div class="right">
+        <h2>Hi there! My name is</h2>
+        <h1>Aslan Li</h1>
+        <img src="assets/img/profile1.jpg" alt="Profile pic" width="600">
 
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/yuhe-li/"><img src="assets/icon/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://www.instagram.com/overthewingssss/"><img src="assets/icon/instagram.png" alt="Instagram" /></a>
-        <a href="https://www.inaturalist.org/observations?place_id=any&user_id=aslanl&verifiable=any"><img src="assets/icon/inat.png" alt="Instagram" /></a>
-        <a href="mailto:aslan.li@yale.edu"><img src="assets/icon/email.png" alt="Email" /></a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yuhe-li/"><img src="assets/icon/linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://www.instagram.com/overthewingssss/"><img src="assets/icon/instagram.png" alt="Instagram" /></a>
+          <a href="https://www.inaturalist.org/observations?place_id=any&user_id=aslanl&verifiable=any"><img src="assets/icon/inat.png" alt="Instagram" /></a>
+          <a href="mailto:aslan.li@yale.edu"><img src="assets/icon/email.png" alt="Email" /></a>
+        </div>
+      </div>
+      <div class="left">
+        <p>Welcome to my portfolio! I am a Master of Environmental Science Student at Yale School of the Environment.<br> My research interest lays in remote sensing technology, ecological resilience and climate change.</p> 
+        <button onclick="window.location.href='https://drive.google.com/file/d/1287_B0MyCk3Lr9q4xx74ct-H3AOKWYZ2/view?usp=drive_link'">
+          Resume
+        </button> 
       </div>
     </div>
-    <div class="left">
-      <p>Welcome to my portfolio! I am a Master of Environmental Science Student at Yale School of the Environment.<br> My research interest lays in remote sensing technology, ecological resilience and climate change.</p> 
-      <button onclick="window.location.href='https://drive.google.com/file/d/1287_B0MyCk3Lr9q4xx74ct-H3AOKWYZ2/view?usp=drive_link'">
-        Resume
-      </button> 
+  </section>
+
+  <section id = 'selfdesc'>
+    <h1>A little more about me</h1>
+    <h2>Education</h2>
+    <p>Master of Environmental Science Student at Yale School of the Environmemt</p>
+    <p>Bachelor of Science at University of California, Los Angeles</p>
+    </ul>
+  </section>
+
+
+  <section id = 'projects'>
+    <h2>Selected Projects</h2>
+    <div id = "projects-grid">
+      <div class="project-card">
+        <h4>Master thesis: Impact of flash droughts on urban forests in Northeast U.S. and related socio-economic inequity ($9000 Go West fellowship)</h4>
+      </div>
+      <div class="project-card">
+        <img src="assets/project/freetown.gif" alt="Freetown Corridors" width="640" height="360" style="object-fit: cover;" >
+        <h4>Urban cooling corridor construction planning for Freetown, Sierra Leone</h4>
+      </div>
+      <div class="project-card">
+        <h4>Ecotourist noise impacts on undulated tinamou calls, Cocha Cashu Biological Station, Peru</h4>
+      </div>
+      <div class="project-card">
+        <h4>Geological susceptibility of ancient architectures in Shanxi, China</h4>
+      </div>
     </div>
-  </div>
-  <div class="nav-links">
-    <a href="projects.html">Selected Projects</a>
-    <a href="work.html">Work experience</a>
-    <a href="photography.html">Natural photography</a>
-    <a href="cesium.html">Cesium work</a><br>
-  </div>
+
+  
+    <div id = "poster">
+      <h2>Research Posters</h2>
+      <img src="assets/poster/tinamou_bioaccoustics-1.png" alt="Tinamou poster" height=600vh>
+      <img src="assets/poster/photomosaic_poster.jpg" alt="Photomosaic poster" height=600vh>
+    </div>
+  </section>
+
+  <section id="photography">
+    <img src="assets/img/common_black_hawk_tarcoles.jpg" alt="Common Black Hawk" width=30%>
+    <img src="assets/img/pacific_screetch_tarcoles.jpg" alt="Pacific Screetch Owl" width=30%>
+    <img src="assets/img/laughing_falcon.jpg" alt="Laughing Falcon" width=30%>
+    <img src="assets/img/spectacled_owl.jpg" alt="Spectacled Owl" width=30%>
+    <img src="assets/img/velvety_manakin_2.jpg" alt="Velvety Manakin" width=30%>
+    <img src="assets/img/frigate_tarcoles.jpg" alt="Velvety Manakin" width=30%>
+    <img src="assets/img/broad_bill_motmot_lafortuna.jpg" alt="Velvety Manakin" width=30%>
+    <img src="assets/img/opossum_tarcoles.jpg" alt="Velvety Manakin" width=30%>
+    <img src="assets/img/gho.jpg" alt="Great Horned Owl" width="30%">
+
+  </section>
+
 </body>
 </html>
