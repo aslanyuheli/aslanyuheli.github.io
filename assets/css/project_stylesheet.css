@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.status-badge {
+  display: inline-block;
+  background: #ffe58a;
+  color: #8c6d1f;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #222;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
