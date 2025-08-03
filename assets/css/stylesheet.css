@@ -34,20 +34,35 @@ section {
   display: flex;
   justify-content: center;
   align-items: center; 
-  gap: 5vw;
-  padding: 5vh 5vw;
   width: 100%;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
 }
 
 .left {
   flex: 1;
   text-align: center;
+  border-left: 1px solid #aaa;
+}
+
+.left p{
+  font-size: 3rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 2%;
 }
 
 .right {
   flex: 1;
   text-align: center;
+}
+
+.right img{
+  border-radius: 1vh;
 }
 
 .container2 {
@@ -70,10 +85,38 @@ section {
   max-width: 100%;
   height: auto;
   display: block;
+  padding-bottom: 2%;
 }
 
 .right2 {
   text-align: left;
+}
+
+.right2 h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.right2 h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #234;
+}
+
+.right2 ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.right2 li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.right2 p {
+  margin-top: 1rem;
+  line-height: 1.6;
 }
 
 p{
@@ -107,7 +150,7 @@ p{
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #33cc59;
     color: white;
     border: none;
@@ -202,6 +245,61 @@ button:hover {
   color: #333;
 }
 
-#work{
-  background: #dde5b6;
+
+#experience {
+  background-color: #e7f0c8;
+  padding: 5vh 4vw;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.experience-column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.experience-entry {
+  margin-bottom: 2vh;
+}
+
+.experience-entry strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.3em;
+  color: #2b2b2b;
+}
+
+.experience-entry p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.experience-entry a {
+  font-size: 0.9rem;
+  color: #3156a3;
+  text-decoration: none;
+}
+
+.experience-entry a:hover {
+  text-decoration: underline;
+}
+
+
